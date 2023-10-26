@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        /*
+        1. element selector formula
+               tag {property:value}
+        */
+        #a1{
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(51, 167, 76);
+        }
+        /*
+        2.id selector formula
+            #id{property:value}         
+        */
+        div.a2
+        {
+            width: 200px;
+            height: 200px;
+            background-color: blanchedalmond;
+        }
+        /*
+        3.class selector formula
+          .name{property:value}
+        */
+        a[href="https://www.google.com"]{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(24, 43, 150);
+            color: black;
+        }
+        /*
+        4.attribute selector formula
+        a[name=value]{
+            property:value
+        }
+        */
+        /*
+        5.universal selector formula
+        *{
+            property:value
+        }
+        */
+        *{
+            border: 10px solid black;
+
+        }
+        /*
+        6.Group selector formula
+         element1, element2, element3.....{
+            property:value
+         }
+        
+        */
+        div,div#a1,div.a2,a[href="https://www.google.com"]{
+            display:inline-block;
+        }
+        /*
+        7.Pesudo element selector
+        element :: selector{
+            property:value
+        }
+        */
+        h1::after{
+            content: url(https://animatedimagepic.com/image/emoji/Rose-Kiss-Emoticon.gif);
+            content: icon;
+        }
+        /*
+        8.pseudo class selector
+             element:selector{
+                property:value
+             }
+        */
+        div#a3:hover{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div>css element selectors</div>
+    <div id="a1">css id selector</div>
+    <div class="a2">class selector</div>
+    <a href="https://www.google.com">attribute selector</a>
+    <h1>Pesudo element selector</h1>
+    <div id="a3"> pseudo class selector</div>
+
+</body>
+</html>
